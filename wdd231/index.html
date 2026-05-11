@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal course homepage of Loara Acosta for WDD231.">
+    <meta name="author" content="Loara Acosta">
+    <title>Loara's Project</title>
+
+    <!---Fonstyles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Stylesheets here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/architect-plan.svg" alt="Site Logo" width="512" height="512">
+        <span>Loara Adyz Acosta-Villa</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+
+    <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Champber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="card">
+                <h2>About Me</h2>
+                <p>I am a Licensed Electrical Engineer and Registered Master Electrician with experience in engineering
+                    instruction, leadership, and operations coordination. I have worked as a college instructor teaching
+                    electrical engineering, mathematics, and basic electronics, where I facilitated hands-on circuit
+                    building, soldering, testing, and technical evaluation activities. </p>
+                <p>Beyond academics, I also gained experience in supervision and data management through my work with
+                    the Philippine Statistics Authority and as an online grader for business and advanced Excel
+                    applications. I am passionate about continuous learning, technology, and leadership, which also led
+                    me to serve for seven years in youth leadership and event coordination roles. Currently, I am
+                    expanding my skills in web and computer programming while building projects that combine technical
+                    knowledge, creativity, and problem-solving.</p>
+            </section>
+            <section class="card">
+                <h2>Student Photo</h2>
+                <img src="images/villa.JPG" alt="Photo of Loara" class="profile-photo">
+            </section>
+            <section class="card full">
+                <h2>Web Certificate Courses</h2>
+                <div class="buttons">
+                    <button id="all">All Courses</button>
+                    <button id="wdd">WDD Courses</button>
+                    <button id="cse">CSE Courses</button>
+                </div>
+                <div id="courses"></div>
+                <p id="credits"></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/loaraadyz.acosta/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/loaraadyz/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16"></a>
+            <a href="https://github.com/laav-byte" target="_blank"><img src="images/github.svg" alt="Github" width="16"
+                    height="16"></a>
+            <a href="https://linkedin.com/in/engr-villa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
+                    width="16" height="16"></a>
+        </div>
+        &copy; <span id="currentyear"></span>
+        • Loara Acosta • Philippines
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/courses.js" defer></script>
+</body>
+
+</html>

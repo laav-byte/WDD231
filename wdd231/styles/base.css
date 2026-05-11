@@ -1,0 +1,201 @@
+/* --COLOR SCHEME--
+dark green = #546B41
+sage green = #99AD7A
+dark cream = #DCCCAC
+cream = #FFF8EC
+*/
+
+
+/* ----------HEADER-------------*/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #DCCCAC;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: #546B41;
+}
+
+/******* HAMBURGER NAVIGATION **********/
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #546B41;
+    cursor: pointer;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/******** NAVIGATION **********/
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: #546B41;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #eee;
+}
+
+.navigation a:hover {
+    background-color: #FFF8EC;
+}
+
+/********* SITE WIDE *************/
+* {
+    font-family: "Merriweather Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem 10px;
+}
+
+/********** FOOTER ************/
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+/********* MAIN *********/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+main h1,
+h2 {
+    color: #546B41;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #FFF8EC;
+}
+
+.container p{
+    text-align: justify;
+}
+
+.full {
+    grid-column: 1 / -1;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+/********* Courses ************/
+.buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 0.75rem;
+    border: none;
+    background-color: #546B41;
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #99AD7A;
+}
+
+#courses {
+    display: grid;
+    gap: 1rem;
+}
+
+.course-card {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    background-color: #DCCCAC;
+}
+
+.completed {
+    background-color: #546B41;
+    color: white;
+}
+
+.completed {
+    border-left: 8px solid gold;
+}
+
