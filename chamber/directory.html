@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Union Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore the La Union Chamber of Commerce business directory featuring local enterprises, services, and networking opportunities in La Union.">
+    <meta name="author" content="Loara Adyz Acosta-Villa">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!---FAcebook Meta-->
+    <meta property="og:title" content="La Union Chamber of Commerce - Directory">
+    <meta property="og:description"
+        content="Discover businesses, services, and networking opportunities through the La Union Chamber of Commerce directory.">
+    <meta property="og:image" content="https://yourdomain.com/images/chamber-preview.jpg">
+    <meta property="og:url" content="https://laav-byte.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <!---Fonstyles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheets here-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <div id="identity">
+            <img src="images/launionchamberlogo.svg" alt="Site Logo" width="512" height="512">
+            <span>La Union Chamber of Commerce</span>
+        </div>
+
+        <nav id="ham-bar" class="navigation"> <!--id and class given that javascript could be use -->
+            <ul>
+                <li class="current"><a href="chamber/directory.html">Home</a></li>
+                <li><a href="chamber/directory.html">Directory</a></li>
+                <li><a href="chamber/directory.html">Join</a></li>
+                <li><a href="chamber/directory.html">Discover</a></li>
+            </ul>
+        </nav>
+        <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/launion.png" alt="La Union Banner">
+        </section>
+        <h1>Home</h1>
+        <div class="container">
+            <section class="card">
+                <h2>Events</h2>
+            </section>
+            <section class="card">
+                <h2>Current Weather</h2>
+            </section>
+            <section class="card">
+                <h2>Weather Forcast</h2>
+            </section>
+        </div>
+        <div class="view-toggle">
+            <button id="gridBtn" class="view-btn">
+                <img src="images/grid.svg" alt="Grid View">
+            </button>
+
+            <button id="listBtn" class="view-btn">
+                <img src="images/list.svg" alt="List View">
+            </button>
+        </div>
+
+        <div id="membersContainer" class="list-view"></div>
+    </main>
+    <footer>
+        <div class="company-detail">
+            <h3>La Union Chamber of Commerce</h3>
+            <p>52 E Rimando Street, Ortiz</p>
+            <p>Naguilian, La union</p>
+            <p>Philippiness</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/loaraadyz.acosta/" target="_blank"><img src="images/facebook.svg"
+                    alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/loaraadyz/" target="_blank"><img src="images/instagram.svg"
+                    alt="Instagram" width="16" height="16"></a>
+            <a href="https://linkedin.com/in/engr-villa" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn"
+                    width="16" height="16"></a>
+        </div>
+        <div class="student-detail">
+            <p>WDD231 Class Project </p>
+            <p>Loara Adyz Acosta-Villa</p>
+            &copy; <span id="currentyear"></span> La Union Chamber of Commerce
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/date.js"></script>
+    <script src="scripts/members.js" defer></script>
+</body>
+
+</html>

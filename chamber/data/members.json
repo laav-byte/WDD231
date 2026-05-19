@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Kabsat Grill House",
+        "address": "Urbiztondo, San Juan, La Union",
+        "number": "09171234567",
+        "url": "www.kabsatgrillhouse.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rKra1cFRVljpxHm0AYJlH9XXfX1U1QmLFw&s",
+        "level": "Gold",
+        "open_hours": "10:00 AM - 10:00 PM"
+    },
+    {
+        "name": "Surf & Sip Café",
+        "address": "Barangay Urbiztondo, San Juan, La Union",
+        "number": "09184567890",
+        "url": "www.surfsipcafe.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFgRT7_nsAEuFESvzl7VacekDRRNz2Wf6X3w&s",
+        "level": "Silver",
+        "open_hours": "7:00 AM - 9:00 PM"
+    },
+    {
+        "name": "La Union Pottery Crafts",
+        "address": "San Juan Town Proper, La Union",
+        "number": "09271239876",
+        "url": "www.lupotterycrafts.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGuKQPPBKBak3J3aqI-oxsdMsxCQTGF3kS-g&s",
+        "level": "Bronze",
+        "open_hours": "8:00 AM - 5:00 PM"
+    },
+    {
+        "name": "Elyu Beach Resort",
+        "address": "Taboc, San Juan, La Union",
+        "number": "09199887766",
+        "url": "www.elyubeachresort.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSaitCaEvALtmpc-NRe4esa_UkNpAnbYl-A&s",
+        "level": "Gold",
+        "open_hours": "24 Hours"
+    },
+    {
+        "name": "Halo-halo de Iloko",
+        "address": "San Fernando City, La Union",
+        "number": "09265554433",
+        "url": "www.ilokoartisanbakery.com",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKdWR7vn86g6twEyNA58HIi9zQD3wJj7rdqw&s",
+        "level": "Silver",
+        "open_hours": "6:00 AM - 6:00 PM"
+    },
+    {
+        "name": "Naguilian Vinegar House",
+        "address": "Naguilian, La Union",
+        "number": "09171239811",
+        "url": "www.naguilianvinegar.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/FvfNaguilanLaUnion0260_16.JPG/250px-FvfNaguilanLaUnion0260_16.JPG?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+        "level": "Bronze",
+        "open_hours": "8:00 AM - 4:00 PM"
+    },
+    {
+        "name": "Bacnotan Honey Farm",
+        "address": "Bacnotan, La Union",
+        "number": "09178889900",
+        "url": "www.bacnotanhoneyfarm.com",
+        "image": "https://ik.imagekit.io/tvlk/blog/2018/03/Bee-farm-750x400.jpg?tr=q-70,c-at_max,w-1000,h-600",
+        "level": "Gold",
+        "open_hours": "9:00 AM - 5:00 PM"
+    }
+]

@@ -1,0 +1,283 @@
+/* --COLOR SCHEME--
+dark green = #546B41
+sage green = #99AD7A
+dark cream = #DCCCAC
+cream = #FFF8EC
+*/
+
+
+/* ========= SITE WIDE ========= */
+* {
+    font-family: "Merriweather Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFF8EC;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    margin: 1rem 10px;
+}
+
+main h1,
+h2 {
+    color: #546B41;
+}
+
+
+/* ========= HEADER ========= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    padding: 0.5rem 1rem;
+    background-color: #DCCCAC;
+    border-bottom: solid 1px #ddd;
+}
+
+/* LEFT SIDE */
+#identity {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+header div img {
+    width: 50px;
+    height: auto;
+    display: block;
+}
+
+header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #546B41;
+}
+
+
+/******* HAMBURGER NAVIGATION **********/
+
+.hamburger {
+    display: block;
+    /* visible on mobile */
+
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #546B41;
+    cursor: pointer;
+    font-family: "Merriweather Sans", sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/******** NAVIGATION **********/
+
+header {
+    display: relative;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* pushes nav near bottom of header */
+    padding-bottom: 0.5rem;
+    /* keeps it just above lower border */
+}
+
+.navigation {
+    display: none;
+    /* hidden by default (mobile) */
+}
+
+.navigation.show {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    bottom: 0.5rem;
+    background: #FFF8EC;
+    padding: 0.5rem;
+    border-radius: 6px;
+    z-index: 1000;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: flex-end;
+    /* ensures items stay right-aligned */
+}
+
+.navigation a {
+    display: block;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.85rem;
+    color: #546B41;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navigation li.current a {
+    background-color: #99AD7A;
+    color: white;
+    border-radius: 4px;
+}
+
+.navigation a:hover {
+    background-color: #FFF8EC;
+}
+
+/********* BODY ************/
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: white;
+
+}
+
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+/* button reset */
+.view-btn {
+    background: none;
+    border: 1px solid #ccc;
+    padding: 0.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* icon size */
+.view-btn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* hover effect */
+.view-btn:hover {
+    background-color: #FFF8EC;
+    border-color: #99AD7A;
+}
+
+/* GRID VIEW */
+
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #FFF8EC;
+}
+
+.member-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+/* LIST VIEW */
+.list-table {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-row {
+    grid-template-columns: 1fr;
+    text-align: left;
+}
+
+.list-img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/********** FOOTER ************/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
+
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.company-detail,
+.student-detail,
+p {
+    justify-content: left;
+}
